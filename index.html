@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhan Tanvir
+ | Digital Solutions Provider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00f0ff;
+            --secondary: #0088ff;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a0a0a;
+            color: #f1f1f1;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+        
+        .glow {
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 240, 255, 0.2);
+        }
+        
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-15px);}
+            60% {transform: translateY(-7px);}
+        }
+        
+        .rotating-text {
+            animation: rotateText 12s infinite;
+        }
+        
+        @keyframes rotateText {
+            0% { opacity: 0; transform: translateY(20px); }
+            5% { opacity: 1; transform: translateY(0); }
+            20% { opacity: 1; transform: translateY(0); }
+            25% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 0; transform: translateY(-20px); }
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--primary);
+            border: 3px solid #0a0a0a;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 33px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black bg-opacity-80 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold gradient-text">Farhan Tanvir
+</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-white transition">Home</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+                    <a href="#services" class="text-gray-300 hover:text-white transition">Services</a>
+                    <a href="#portfolio" class="text-gray-300 hover:text-white transition">Portfolio</a>
+                    <a href="#process" class="text-gray-300 hover:text-white transition">Process</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
+        <div class="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-gray-800 opacity-90"></div>
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1639762681057-408e52192e55?q=80&w=2232&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10 text-center">
+            <div class="flex justify-center mb-8">
+                <div class="w-40 h-40 rounded-full border-4 border-[#00f0ff] overflow-hidden glow">
+                    <img src="https://i.postimg.cc/QM6QBKpW/1729579709861.jpg" alt="Farhan Tanvir
+" class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                Empowering Businesses Through <span class="gradient-text">Data, Design & AI</span>
+            </h1>
+            
+            <div class="relative h-12 mb-6">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="rotating-text text-xl md:text-2xl text-gray-300">
+                        <div>Web Design • AI Art • SEO Writing</div>
+                        <div>Data Mining • Logo Design • Mockups</div>
+                        <div>AI Automation • Content Writing • Translations</div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                I'm Farhan Tanvir
+ — delivering results through digital innovation, creativity, and precision from Pabna, Bangladesh.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#services" class="px-8 py-3 rounded-full gradient-bg text-black font-semibold hover:opacity-90 transition">
+                    View Services <i class="fas fa-arrow-down ml-2"></i>
+                </a>
+                <a href="#contact" class="px-8 py-3 rounded-full border border-[#00f0ff] text-[#00f0ff] font-semibold hover:bg-[#00f0ff] hover:bg-opacity-10 transition">
+                    Contact Me <i class="fas fa-paper-plane ml-2"></i>
+                </a>
+            </div>
+            
+            <div class="absolute bottom-10 left-0 right-0 flex justify-center">
+                <a href="#about" class="scroll-indicator text-gray-400">
+                    <i class="fas fa-chevron-down text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    About <span class="gradient-text">Me</span>
+                </h2>
+                <div class="w-20 h-1 gradient-bg mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/3 flex justify-center">
+                    <div class="w-64 h-64 rounded-full border-4 border-[#00f0ff] overflow-hidden glow">
+                        <img src="https://i.postimg.cc/VshbXRyg/7969db62-5510-41c0-8130-80ed31a38848.jpg" alt="Farhan Tanvir
+" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                
+                <div class="lg:w-2/3">
+                    <h3 class="text-2xl font-bold mb-4">Farhan Tanvir
+</h3>
+                    <p class="text-gray-300 mb-6">
+                        A passionate digital solutions provider from Pabna, Bangladesh, combining traditional expertise with cutting-edge AI technology to deliver exceptional results for businesses worldwide. With a keen eye for detail and commitment to excellence, I help clients transform their digital presence.
+                    </p>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold mb-4 gradient-text">Education</h4>
+                        <div class="relative timeline pl-16">
+                            <div class="relative timeline-item mb-8">
+                                <h5 class="font-bold">Secondary School Certificate (SSC)</h5>
+                                <p class="text-gray-400">Completed</p>
+                            </div>
+                            <div class="relative timeline-item">
+                                <h5 class="font-bold">Higher Secondary</h5>
+                                <p class="text-gray-400">Currently in Class 11</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="inline-block px-6 py-2 rounded-full border border-[#00f0ff] text-[#00f0ff] font-semibold hover:bg-[#00f0ff] hover:bg-opacity-10 transition">
+                        Get My Resume <i class="fas fa-download ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    My <span class="gradient-text">Services</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Comprehensive digital solutions tailored to your business needs
+                </p>
+                <div class="w-20 h-1 gradient-bg mx-auto mt-4"></div>
+            </div>
+            
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-8 text-center gradient-text">Core Services</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="service-card bg-gray-900 rounded-xl p-6 transition duration-300 hover:border-[#00f0ff] border border-gray-800">
+                        <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-code text-xl text-black"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Website Design & Development</h4>
+                        <p class="text-gray-400">
+                            Custom, responsive websites that engage visitors and convert them into customers.
+                        </p>
+                    </div>
+                    
+                    <!-- Service Card 2 -->
+                    <div class="service-card bg-gray-900 rounded-xl p-6 transition duration-300 hover:border-[#00f0ff] border border-gray-800">
+                        <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-shopping-cart text-xl text-black"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">E-commerce Product Listing</h4>
+                        <p class="text-gray-400">
+                            Professional product listings that highlight features and drive sales.
+                        </p>
+                    </div>
+                    
+                    <!-- Service Card 3 -->
+                    <div class="service-card bg-gray-900 rounded-xl p-6 transition duration-300 hover:border-[#00f0ff] border border-gray-800">
+                        <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-database text-xl text-black"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Data Mining & Analysis</h4>
+                        <p class="text-gray-400">
+                            Extract valuable insights from data to drive informed business decisions.
+                        </p>
+                    </div>
+                    
+                    <!-- Service Card 4 -->
+                    <div class="service-card bg-gray-900 rounded-xl p-6 transition duration-300 hover:border-[#00f0ff] border border-gray-800">
+                        <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-pen-fancy text-xl text-black"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">SEO Content Writing</h4>
+                        <p class="text-gray-400">
+                            Optimized content that ranks well and engages your target audience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-2xl font-bold mb-8 text-center gradient-text">AI-Powered Services</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- AI Service 1 -->
+                    <div class="service-card bg-gray-900 rounded-xl p-6 transition duration-300 hover:border-[#00f0ff] border border-gray-800">
+                        <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-video text-xl text-black"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Image to Video Conversion</h4>
+                        <p class="text-gray-400">
+                            Transform static images into engaging video content using AI technology.
+                        </p>
+                    </div>
+                    
+                    <!-- AI Service 2 -->
+                    <div class="service-card bg-gray-900 rounded-xl p-6 transition duration-300 hover:border-[#00f0ff] border border-gray-800">
+                        <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-robot text-xl text-black"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">AI-Powered Logo Design</h4>
+                        <p class="text-gray-400">
+                            Unique, professional logos generated by AI with human refinement.
+                        </p>
+                    </div>
+                    
+                    <!-- AI Service 3 -->
+                    <div class="service-card bg-gray-900 rounded-xl p-6 transition duration-300 hover:border-[#00f0ff] border border-gray-800">
+                        <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-paint-brush text-xl text-black"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">AI-Generated Art</h4>
+                        <p class="text-gray-400">
+                            Stunning digital artwork created through AI with artistic direction.
+                        </p>
+                    </div>
+                    
+                    <!-- AI Service 4 -->
+                    <div class="service-card bg-gray-900 rounded-xl p-6 transition duration-300 hover:border-[#00f0ff] border border-gray-800">
+                        <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-book text-xl text-black"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">AI-Generated eBooks</h4>
+                        <p class="text-gray-400">
+                            Professionally formatted eBooks on any topic with AI-assisted writing.
+                        </p>
+                    </div>
+                    
+                    <!-- AI Service 5 -->
+                    <div class="service-card bg-gray-900 rounded-xl p-6 transition duration-300 hover:border-[#00f0ff] border border-gray-800">
+                        <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-search-dollar text-xl text-black"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">SEO Keyword Research</h4>
+                        <p class="text-gray-400">
+                            AI-powered keyword analysis to target the right audience effectively.
+                        </p>
+                    </div>
+                    
+                    <!-- AI Service 6 -->
+                    <div class="service-card bg-gray-900 rounded-xl p-6 transition duration-300 hover:border-[#00f0ff] border border-gray-800">
+                        <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-microphone text-xl text-black"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">AI Voiceover Services</h4>
+                        <p class="text-gray-400">
+                            Natural-sounding voiceovers in multiple languages for your content.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    My <span class="gradient-text">Portfolio</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    A showcase of my recent projects and work samples
+                </p>
+                <div class="w-20 h-1 gradient-bg mx-auto mt-4"></div>
+            </div>
+            
+            <div class="flex justify-center mb-8">
+                <div class="inline-flex rounded-md shadow-sm">
+                    <button type="button" class="px-4 py-2 text-sm font-medium rounded-l-lg border border-[#00f0ff] bg-[#00f0ff] bg-opacity-10 text-[#00f0ff]">
+                        All Projects
+                    </button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium border-t border-b border-gray-600 text-gray-400 hover:bg-gray-800">
+                        Web Design
+                    </button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium border-t border-b border-gray-600 text-gray-400 hover:bg-gray-800">
+                        AI Art
+                    </button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium rounded-r-lg border border-gray-600 text-gray-400 hover:bg-gray-800">
+                        Data Projects
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Portfolio Item 1 -->
+
+                <div class="group relative overflow-hidden rounded-xl border border-gray-800 hover:border-[#00f0ff] transition duration-300">
+                    <img src="https://i.postimg.cc/nVmmxPwm/Screenshot-2025-05-08-184220.png" alt="Web Design Project" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2"> Website </h3>
+                            <p class="text-gray-300 mb-3">Fully responsive online store with custom design</p>
+                            <a href="#" class="text-[#00f0ff] hover:underline">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="group relative overflow-hidden rounded-xl border border-gray-800 hover:border-[#00f0ff] transition duration-300">
+                    <img src="https://i.postimg.cc/rwHWM2cS/287282976-454123929770585-1961189201011634233-n.webp" alt="AI Art Project" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">AI-Generated Art Collection</h3>
+                            <p class="text-gray-300 mb-3">Series of digital artworks created with AI</p>
+                            <a href="#" class="text-[#00f0ff] hover:underline">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+                
+               <!-- Portfolio Item 3 -->
+<div class="group relative overflow-hidden rounded-xl border border-gray-800 hover:border-[#00f0ff] transition duration-300">
+    <img src="https://i.postimg.cc/fWHR6jMd/download.png" alt="Data Project" class="w-full h-64 object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+        <div>
+            <h3 class="text-xl font-bold mb-2">Data Visualization Dashboard</h3>
+            <p class="text-gray-300 mb-3">Interactive dashboard for business analytics</p>
+            <a href="https://docs.google.com/document/d/1pQ3qvcH892vV9YUiYJCWjw7PBzciY1eTJEX-MyOjQ6E/edit?usp=sharing" target="_blank" class="text-[#00f0ff] hover:underline">View Project →</a>
+        </div>
+    </div>
+</div>
+
+                
+                <!-- Portfolio Item 4 -->
+                <div class="group relative overflow-hidden rounded-xl border border-gray-800 hover:border-[#00f0ff] transition duration-300">
+                    <img src="https://i.postimg.cc/FsLXDjzN/logo-design-services.jpg" alt="Logo Design" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Brand Identity Package</h3>
+                            <p class="text-gray-300 mb-3">Complete branding with AI-assisted logo</p>
+                            <a href="#" class="text-[#00f0ff] hover:underline">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="group relative overflow-hidden rounded-xl border border-gray-800 hover:border-[#00f0ff] transition duration-300">
+                    <img src="https://i.postimg.cc/z3mM9cv5/images.png" alt="SEO Content" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">SEO Content Strategy</h3>
+                            <p class="text-gray-300 mb-3">Content that ranked #1 for competitive keywords</p>
+                            <a href="#" class="text-[#00f0ff] hover:underline">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="group relative overflow-hidden rounded-xl border border-gray-800 hover:border-[#00f0ff] transition duration-300">
+                    <img src="https://i.postimg.cc/rsSXFkvz/hq720.jpg" alt="Product Mockup" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Product Mockup Gallery</h3>
+                            <p class="text-gray-300 mb-3">Realistic product presentations for e-commerce</p>
+                            <a href="#" class="text-[#00f0ff] hover:underline">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block px-6 py-3 rounded-full border border-[#00f0ff] text-[#00f0ff] font-semibold hover:bg-[#00f0ff] hover:bg-opacity-10 transition">
+                    View All Projects <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    My <span class="gradient-text">Process</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    A structured approach to delivering exceptional results
+                </p>
+                <div class="w-20 h-1 gradient-bg mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-black">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Discovery & Planning</h3>
+                    <p class="text-gray-400">
+                        Understanding your goals and creating a strategic roadmap
+                    </p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-black">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Research & Tools</h3>
+                    <p class="text-gray-400">
+                        Selecting the right technologies and conducting market research
+                    </p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-black">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Execution</h3>
+                    <p class="text-gray-400">
+                        Developing the solution with attention to detail and quality
+                    </p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-black">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Review & Feedback</h3>
+                    <p class="text-gray-400">
+                        Incorporating your input to refine and perfect the solution
+                    </p>
+                </div>
+                
+                <!-- Step 5 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-black">5</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Delivery & Support</h3>
+                    <p class="text-gray-400">
+                        Launching your project and providing ongoing assistance
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    My <span class="gradient-text">Skills</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    The tools and technologies I work with
+                </p>
+                <div class="w-20 h-1 gradient-bg mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Data & Web Skills -->
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-6 gradient-text">Data & Web</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-300">Data Mining</span>
+                                <span class="text-gray-400">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-300">Web Design</span>
+                                <span class="text-gray-400">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-300">Product Listing</span>
+                                <span class="text-gray-400">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Content & SEO Skills -->
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-6 gradient-text">Content & SEO</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-300">SEO Writing</span>
+                                <span class="text-gray-400">92%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-300">Keyword Research</span>
+                                <span class="text-gray-400">88%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-300">Content Strategy</span>
+                                <span class="text-gray-400">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI Skills -->
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-6 gradient-text">AI Skills</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-300">AI Logo Design</span>
+                                <span class="text-gray-400">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-300">AI Voiceover</span>
+                                <span class="text-gray-400">87%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-300">AI Automation</span>
+                                <span class="text-gray-400">83%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full" style="width: 83%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    Get In <span class="gradient-text">Touch</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Ready to start your project? Contact me today!
+                </p>
+                <div class="w-20 h-1 gradient-bg mx-auto mt-4"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-[#00f0ff] focus:outline-none text-white">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-[#00f0ff] focus:outline-none text-white">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Your Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-[#00f0ff] focus:outline-none text-white"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full px-6 py-3 rounded-full gradient-bg text-black font-semibold hover:opacity-90 transition">
+                            Send Message <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-900 rounded-xl p-8 border border-gray-800 h-full">
+                        <h3 class="text-2xl font-bold mb-6 gradient-text">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 gradient-bg rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-envelope text-black"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-300">Email</h4>
+                                    <a href="mailto:shishirmd681@gmail.com" class="text-[#00f0ff] hover:underline">shishirmd681@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 gradient-bg rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-phone text-black"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-300">Phone</h4>
+                                    <a href="tel:+17024830749" class="text-[#00f0ff] hover:underline">+1 702-483-0749</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 gradient-bg rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt text-black"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-300">Location</h4>
+                                    <p class="text-gray-400">Pabna, Bangladesh</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold mt-10 mb-6 gradient-text">Connect With Me</h3>
+                        
+                        <div class="flex space-x-4">
+                            <a href="https://fb.com/iamftso" target="_blank" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-[#00f0ff] hover:bg-[#00f0ff] hover:bg-opacity-10 transition">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="https://instagram.com/iamfts0" target="_blank" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-[#00f0ff] hover:bg-[#00f0ff] hover:bg-opacity-10 transition">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/shishirbd2021" target="_blank" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-[#00f0ff] hover:bg-[#00f0ff] hover:bg-opacity-10 transition">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-xl font-bold gradient-text">Farhan Tanvir
+</span>
+                    <p class="text-gray-400 mt-1">Digital Solutions Provider</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#home" class="text-gray-400 hover:text-white transition">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
+                    <a href="#services" class="text-gray-400 hover:text-white transition">Services</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2023 Farhan Tanvir
+. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            // You would implement mobile menu functionality here
+            alert('Mobile menu would open here in a complete implementation');
+        });
+        
+        // Rotating text animation
+        const rotatingTexts = document.querySelectorAll('.rotating-text div');
+        let currentIndex = 0;
+        
+        function rotateText() {
+            rotatingTexts.forEach((text, index) => {
+                text.style.display = index === currentIndex ? 'block' : 'none';
+            });
+            currentIndex = (currentIndex + 1) % rotatingTexts.length;
+        }
+        
+        // Start the rotation
+        setInterval(rotateText, 3000);
+        rotateText(); // Initial call
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=iamfts0/my-porfull" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
